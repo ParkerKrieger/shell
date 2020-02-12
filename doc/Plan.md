@@ -51,7 +51,23 @@ The shell will wait for processes to finish before prompting for more input, unl
 external command. Output will be written to the shell as it is available.
 
 # 3. Implementation
+History is held in an ArrayList
 
+ProcessBuilder is used to execute external commands
+
+System.currentTimeMillis() is used to track time spent waiting for external commands
+
+The System property "user.dir" is used to find the users directory
+
+The System property "user.home" is used to find the home directory
+
+java.nio.file.Path is used to manipulate directories in a cross-platform way
+
+The File class is used to get info for the 'list' command
+
+java.text.SimpleDateFormat is used to format the date for the 'list' command.
+
+The shell should not crash from bad input
 
 
 #4. Verification
